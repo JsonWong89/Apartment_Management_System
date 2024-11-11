@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ='icon' href = 'Logo.jpeg' type="image/icon">
+    <title>(G)Showroom Appointment</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://ihdwall.com/storage/202101/mountain-lake-forest-landscape-nature-scenery-hd-wallpaper-1920x1080.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    #bookingForm{
+        border-radius: 20px;
+        background-color: rgba(211, 211, 211, 0.766);
+        padding: 25px;
+        margin: 40px auto 40px;
+        max-width: 1200px;
+        min-height: 640px;
+        text-align: center;
+        /* background-color: #ff0000; */
+    }
+
+    table {
+        margin: auto;
+        min-width: 750px;
+    }
+
+    tr {
+        /* float: left; */
+        width: 100%;
+        overflow: auto;
+        margin: auto auto 10px auto;
+    }
+
+    img {
+        width: 60%;
+        height: 100px;
+        float: right;
+    }
+
+    label {
+        font-size: 20px;
+        font-style: bold;
+        float: left;
+        margin: auto;
+    }
+
+    a {
+        width: fit-content;
+        height: fit-content;
+        text-decoration: none;
+        position: relative;
+    }
+
+</style>
+</head>
+<body>
+    <div id="bookingForm">
+        <table>
+            <tr><td><center><h1>Showroom Appointment</h1></center></td></tr>
+            <tr><td><center><h3>Choose Showroom Type</h3></center></td></tr>
+            <tr>
+                <td class="text">
+                    <a href="AppointmentTypeA.php"><label>Unit Plan A : </label><img src="Type A.webp" alt=""></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="text">
+                    <a href="AppointmentTypeB.php"><label>Unit Plan B : </label><img src="Type B.webp" alt=""></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="text">
+                    <a href="AppointmentTypeC.php"><label>Unit Plan C : </label><img src="Type C.webp" alt=""></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="text">
+                    <a href="AppointmentTypeD.php"><label>Unit Plan D : </label><img src="Type D.webp" alt=""></a>
+                </td>
+            </tr>
+        </table>
+    </div>  
+
+    <!-- <script>
+    function validateForm() {
+        // Perform your JavaScript form validation here
+        // Return true if validation passes, or false otherwise
+        // For example:
+        var firstname = document.getElementById("firstnameInput").value;
+        var lastname = document.getElementById("lastnameInput").value;
+        var email = document.getElementById("emailInput").value;
+        var number = document.getElementById("numberInput").value;
+        var numberpersons = document.getElementById("numberpersonsInput").value;
+        var date = document.getElementById("dateInput").value;
+        var starttime = document.getElementById("startTimeInput").value;
+        var endtime = document.getElementById("endTimeInput").value;
+        // Perform validation checks
+        if (firstname === "" || lastname === "" || email === "" || number === "" || numberpersons === "" || date === "" || starttime === "" || endtime === "") {
+            alert("Please fill in all required fields.");
+            return false;
+        }
+        return true;
+    }
+    </script> -->
+</body>
+</html>

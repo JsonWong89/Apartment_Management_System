@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ='icon' href = 'Logo.jpeg' type="image/icon">
+    <title>(A)Admin Page</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("AdminPage.jpg");
+            height: 100vh;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+        }
+        button{
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            border:10%;
+            cursor: pointer;
+            width: 10%;
+            opacity: 0.9;
+            opacity:1;
+            float: left;
+            border-radius: 4%;
+            margin-top: 2%;
+            font-size: 100%;
+        }
+        button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        button:hover span {
+            padding-right: 25px;
+        }
+        button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .btn-1{
+            margin-left: 79%;
+            margin-top: 5%;
+        }
+        .btn-2{
+            margin-left: 87%;
+            margin-top: 5%;
+        }
+        .btn-3{
+            margin-left: 79%;
+            margin-top: 5%;
+        }
+        .btn-4{
+            margin-left: 87%;
+            margin-top: 5%;
+        }
+        .btn-5{
+            margin-left: 79%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .btn-6 {
+            margin-left: 87%;
+            margin-top: 1%;
+        }
+
+        a {
+            height: fit-content;
+            width: fit-content;
+        }
+
+        h1 {
+            float: right;
+            margin-right: 20%;
+        }
+        
+    </style>
+    <h1>Quick Access : </h1><a href="Homepage(A).php"><button type="button" class="btn-6" ></span><span>Admin Home Page</span></button></a>
+    <a href="Appointment(A).php"><button type="button" class="btn-1" ><span>Appointment Timetable</span></button></a><br>
+    <a href=""><button type="button" class="btn-2" ><span>Edit Page</span></button></a>
+    <a href="PublicNotices(A).php"><button type="button" class="btn-3" ><span>Public Notices</span></button></a>
+    <a href="Enquiry(A).php"><button type="button" class="btn-4" ><span>Enquiry</span></button></a>
+    <a href="PaymentSetDetails(A).php"><button type="button" class="btn-5" ><span>Payment</span></button></a>
+
+</body>
+</html>

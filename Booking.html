@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel ='icon' href = 'EcoLogo.webp' type="image/icon">
+</head>
+<style>
+*{
+    margin:0;
+}
+body{
+    /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230715/pngtree-3d-rendering-of-condo-image_3855047.png");
+    background-size: cover;
+    background-repeat:no-repeat; */
+    background-color: #323131;
+}
+a{
+    text-decoration: none;
+    color:#b79777 ;
+    font-size:20px;
+}
+a:hover{
+    font-weight: bold;
+    color: #786a5c;
+}
+.header{
+    height:80px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    position:relative;
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+}
+.card .face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform:perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    color:#f5f2f0;
+    background:rgb(0,0,0,0.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgba(113, 201, 252, 0.616);
+    padding:15px;
+    color:#f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+}
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg)
+}
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg)
+}
+.button-21 {
+    align-items: center;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-top: 50%;
+  }
+  
+  .button-21:active,
+  .button-21:focus {
+    outline: none;
+  }
+  
+  .button-21:hover {
+    background-position: -20px -20px;
+  }
+  
+  .button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+  }
+  a{
+    color: #000;
+  }
+</style>
+<body>
+    <hr>
+    <div class="service">
+        <div class="card">
+            <div class="face front">
+                <img src="Mic.png" alt="" >
+                <h3>MG OK</h3>
+            </div>
+            <div class="face back">
+                <p><button class="button-21" class="nextbtn" name="btnnext"><a href="BookingForm1.php">Booking Now </a></button></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="GymRoom.jpg" alt="">
+                <h3>MG Gym</h3>
+            </div>
+            <div class="face back">
+                <p><button class="button-21" role="button"><a href="BookingForm1.php">Booking Now</a></button></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="Yoga.jpg" alt="">
+                <h3>MG Yoga</h3>
+            </div>
+            <div class="face back">
+                <p><button class="button-21" role="button"><a href="BookingForm1.php">Booking Now</a></button></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="Lee_Chong_Wei.webp" alt="">
+                <h3>MG Badminton</h3>
+            </div>
+            <div class="face back">
+                <p><button class="button-21" role="button"><a href="BookingForm1.php">Booking Now</a></button></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="Swimming-Pool.jpg" alt="">
+                <h3>MG Pool</h3>
+            </div>
+            <div class="face back">
+                <p><button class="button-21" role="button"><a href="BookingForm1.php">Booking Now</a></button></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="Amphitheatre.jpg" alt="" >
+                <h3>Amphitheatre</h3>
+            </div>
+            <div class="face back">
+                <p><button class="button-21" role="button"><a href="BookingForm1.php">Booking Now</a></button></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
